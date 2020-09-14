@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">
+    Survey Form
+  </h1>
+
+  <div id="form-container">
+    
+    <p id="description">
+      Let us know how to improve freecodecamp
+    </p>
+    <form id="survey-form">
+      <div class="row">
+        <div class="leftside">
+          <label for="name"  id="name-label">* Name</label>
+        </div>
+        <div class="rightside">
+          <input id="name" class="input-field" type="text" name="name" placeholder="Enter your Name" required>
+        </div>
+        
+        
+      </div>
+      
+      <div class="row">
+        <div class="leftside">
+          <label for="email" id="email-label">* Email</label>
+        </div>
+        <div class="rightside">
+          <input id="email" class="input-field"  type="email" name="email" placeholder="Enter your Email" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="leftside">
+          <label for="number"  id="number-label">* Age</label>
+        </div>
+        <div class="rightside">
+          <input id="number"  class="input-field"type="number" name="number" min="1" max="200" placeholder="Age">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="leftside">
+          <label for="dropdown">What best corresponds your role</label>
+        </div>
+        <div class="rightside">
+          <select id="dropdown" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="enthuziast">Enthuziast</option>
+            <option value="teacher">Teacher</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="leftside">
+          <label>Do you recommend Freecodecamp to your friends?</label>
+        </div>
+        <div class="rightside">
+          <ul style="list-style:none">
+            <li class="radio">
+              <label>Not Sure<input class="userRatings" type="radio" name="radioToFriends" value="1"></label>
+            </li>
+            <li class="radio">
+              <label>Maybe<input class="userRatings" type="radio" name="radioToFriends" value="2"></label>
+            </li>
+            <li class="radio">
+              <label>Definitely<input class="userRatings" type="radio" name="radioToFriends" value="3"></label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="leftside">
+          <label>Do you recommend Freecodecamp to your colleagues?</label>
+        </div>
+        <div class="rightside">
+          <ul style="list-style:none">
+            <li class="radio">
+              <label>Not Sure<input class="userRatings" type="radio" name="radioToColleagues" value="1"></label>
+            </li>
+            <li class="radio">
+              <label>Maybe<input class="userRatings" type="radio" name="radioToColleagues" value="1"></label>
+            </li>
+            <li class="radio">
+              <label>Definitely<input class="userRatings" type="radio" name="radioToColleagues" value="3"></label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="leftside">
+          <label>Choose what you want to learn in WD</label>
+        </div>
+        <div class="rightside">
+          <ul style="list-style: none;">
+            <li><label><input class="userRatings" type="checkbox" name="checkbox" value="1">Front End</label></li>
+            <li><label><input class="userRatings" type="checkbox" name="checkbox" value="2">Back End</label></li>
+            <li><label><input class="userRatings" type="checkbox" name="checkbox" value="3">Data Visualization</label></li>
+            <li><label><input class="userRatings" type="checkbox" name="checkbox" value="4">Forum</label></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="leftside">
+          <label for="textarea">Comment here</label>
+        </div>
+        <div class="rightside">
+          <textarea id="textarea" class="input-field" type="textarea" name="textarea" placeholder="Enter your comment here..." ></textarea>
+        </div>
+      </div>
+      
+      <button id="submit">Submit</button>
+      
+    </form>
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
