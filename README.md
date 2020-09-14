@@ -1,2 +1,2 @@
 # SurveyForm
-https://github.com/beqarion/SurveyForm/settings
+https://beqarion.github.io/SurveyForm/
